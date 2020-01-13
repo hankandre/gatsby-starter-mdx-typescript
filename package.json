@@ -22,8 +22,11 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "preinstall": "npx use-yarn",
     "develop": "gatsby develop",
     "dev": "yarn develop",
+    "start": "gatsby start",
+    "build": "gatsby build",
     "test": "jest --config jest-configs/jest-test.config.js",
     "test:watch": "jest --watch"
   },
@@ -34,7 +37,6 @@
     "@mdx-js/react": "^1.5.3",
     "@mdx-js/tag": "^0.20.3",
     "emotion-theming": "^10.0.27",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
     "gatsby": "^2.18.21",
     "gatsby-image": "^2.2.38",
     "gatsby-plugin-emotion": "^4.1.21",
@@ -83,6 +85,7 @@
     "eslint-config-xo-react": "^0.22.0",
     "eslint-config-xo-typescript": "^0.24.1",
     "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.0.7",
