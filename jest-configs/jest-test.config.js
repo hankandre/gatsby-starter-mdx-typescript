@@ -1,6 +1,4 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const config = require('../gatsby-config');
-
 module.exports = {
   displayName: 'test',
   rootDir: '..',
@@ -22,8 +20,9 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: '',
   },
-  testURL: config.siteMetadata.siteUrl || 'https://localhost',
+  testURL: 'https://localhost',
   setupFiles: ['<rootDir>/loader-shim.js'],
+  setupFilesAfterEnv: ['<rootDir>/test-setup.js'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',

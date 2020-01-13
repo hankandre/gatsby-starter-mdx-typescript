@@ -48,7 +48,7 @@ module.exports = {
     'capitalized-comments': 'off', //🤫
     'no-warning-comments': 'off', // TODOs can be helpful!
 
-    '@typescript-eslint/no-explicit-any': 'error', // Better to have this on and turn it off it becomes problematic.
+    '@typescript-eslint/no-explicit-any': 'error', // Better to have this on and turn it off if it becomes problematic.
     // Spreading obfuscates the passage of props; especially in cases
     // of prop-drilling. Better to explicitly pass props or intentionally
     // ignore the spreading of props (see components/link/index.tsx)

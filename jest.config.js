@@ -4,9 +4,10 @@ module.exports = {
     '<rootDir>/jest-configs/jest-eslint.config.js',
   ],
   watchPlugins: [
-    'jest-watch-typeahead',
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
     'jest-watch-master',
     'jest-watch-continue',
-    'jest-watch-toggle-config',
+    'jest-watch-select-projects',
   ],
 };
