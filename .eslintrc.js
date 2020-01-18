@@ -7,8 +7,9 @@ module.exports = {
     'plugin:jest/style',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:unicorn/recommended',
   ],
-  plugins: ['react', 'jsx-a11y', 'jest', '@typescript-eslint'],
+  plugins: ['react', 'jsx-a11y', 'jest', '@typescript-eslint', 'unicorn'],
   env: {
     browser: true,
     es6: true,
@@ -56,6 +57,18 @@ module.exports = {
         html: 'enforce',
         custom: 'enforce',
         explicitSpread: 'ignore',
+      },
+    ],
+    'babel/camelcase': 'off', // Already done via @typescript-eslint/camel-case
+    'unicorn/prevent-abbreviations': [
+      'error',
+      {
+        replacements: {
+          props: false,
+          args: false,
+          prop: false,
+          ref: false,
+        },
       },
     ],
   },
