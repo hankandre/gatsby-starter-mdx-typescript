@@ -1,0 +1,5 @@
+node_modules
+
+# Folders created by Gatsby
+public
+.cache

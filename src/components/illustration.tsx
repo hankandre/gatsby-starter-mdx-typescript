@@ -1,15 +1,16 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
-import Link from './link';
 import typography from '../utils/typography';
+import Link from './link';
 
 type Props = {
   className?: string;
 };
 
 export default function Illustration({ className }: Props) {
-  const theme = useTheme();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const theme = useTheme<any>();
   return (
     <figure
       css={css`

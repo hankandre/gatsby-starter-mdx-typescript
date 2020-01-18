@@ -8,6 +8,7 @@ module.exports = {
   Link: jest.fn().mockImplementation(
     // these props are invalid for an `a` tag
     ({
+      /*eslint-disable @typescript-eslint/no-unused-vars */
       activeClassName,
       activeStyle,
       getProps,
@@ -15,6 +16,7 @@ module.exports = {
       partiallyActive,
       ref,
       replace,
+      /*eslint-enable @typescript-eslint/no-unused-vars */
       to,
       ...rest
     }) =>
