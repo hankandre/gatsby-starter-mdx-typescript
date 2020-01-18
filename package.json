@@ -98,7 +98,7 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx,js,jsx}": [
-      "jest --config jest-configs/jest-test.config.js --bail --findRelatedTests",
+      "test --bail --findRelatedTests",
       "eslint . --ext .js,.jsx,.tsx,.ts --fix"
     ]
   },
